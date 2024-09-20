@@ -22,7 +22,8 @@ body {
   margin: 0;
   padding: 10px;
   min-height: 100vh;
-  background-image: url("./img/background.webp");
+  background-image: url("./img/background.webp"),
+                    linear-gradient(45deg, #3e6c9a, #f9dbc2);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -79,7 +80,6 @@ body {
 
   &__text {
     color: #000;
-    text-wrap: nowrap;
 
     &--accent {
       text-transform: uppercase;
@@ -90,23 +90,20 @@ body {
     display: flex;
     justify-content: space-between;
     column-gap: 10px;
+    align-items: flex-start;
   }
 
   &__details {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    row-gap: 10px;
+    flex-grow: 1;
   }
 
-  &__qr {
-    width: 150px;
-    aspect-ratio: 1;
-
-    img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+  &__image {
+    display: block;
+    width: 100%;
+    max-width: 150px;
   }
 }
