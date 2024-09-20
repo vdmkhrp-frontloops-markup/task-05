@@ -2,7 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/style.scss" />
     <link rel="icon" href="./src/img/favicon.ico" sizes="32x32" />
     <link rel="icon" href="./src/img/favicon.svg" type="image/svg+xml" />
@@ -21,6 +30,39 @@
           <abbr title="Amsterdam">ams</abbr>
           Amsterdam
         </h2>
+      </div>
+      <div class="ticket__info">
+        <div class="ticket__info-item">
+          <h2 class="ticket__title">FLIGHT</h2>
+          <p class="ticket__text ticket__text--accent">815</p>
+        </div>
+        <div class="ticket__info-item">
+          <h2 class="ticket__title">GATE</h2>
+          <p class="ticket__text ticket__text--accent">23g</p>
+        </div>
+        <div class="ticket__info-item">
+          <h2 class="ticket__title">SEAT</h2>
+          <p class="ticket__text ticket__text--accent">10f</p>
+        </div>
+      </div>
+      <div class="ticket__body">
+        <div class="ticket__details">
+          <div class="ticket__details-item">
+            <h2 class="ticket__title">passenger</h2>
+            <p class="ticket__text">Robert De Niro</p>
+          </div>
+          <div class="ticket__details-item">
+            <h2 class="ticket__title">class</h2>
+            <p class="ticket__text">Robert De Niro</p>
+          </div>
+          <div class="ticket__details-item">
+            <h2 class="ticket__title">DEPARTURE</h2>
+            <p class="ticket__text">3:45am, Dec 15</p>
+          </div>
+        </div>
+        <div class="ticket__qr">
+          <img src="./src/img/qr.svg" alt="qr-code" />
+        </div>
       </div>
     </div>
   </body>
